@@ -1,0 +1,1 @@
+alias bazzite-iso-ghcr="bluebuild generate-iso --iso-name bazzite-custom-$(date -I).iso image ghcr.io/omegasquad82/bazzite-stable-customized"
