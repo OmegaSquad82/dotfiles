@@ -1,6 +1,6 @@
 
 # use codium cask instead of flatpak
-if command -v brew; then
+if command -v brew >/dev/null; then
 	brew tap ublue-os/tap
 	brew install --cask vscodium-linux
 fi
