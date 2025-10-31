@@ -1,0 +1,12 @@
+
+# use codium cask instead of flatpak
+if command -v brew; then
+	brew tap ublue-os/tap
+	brew install --cask vscodium-linux
+fi
+
+# linuxbrew installed package binary directories
+if ! [[ "$PATH" =~ "$HOMEBREW_PREFIX/lib/ruby/gems/3.4.0/bin:" ]]; then
+    PATH="$HOMEBREW_PREFIX/lib/ruby/gems/3.4.0/bin:$PATH"
+fi
+export PATH
