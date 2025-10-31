@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 
 # use codium cask instead of flatpak
 if command -v brew >/dev/null; then
@@ -8,7 +9,7 @@ if command -v brew >/dev/null; then
 fi
 
 # linuxbrew installed package binary directories
-if ! [[ "$PATH" =~ "$HOMEBREW_PREFIX/lib/ruby/gems/3.4.0/bin:" ]]; then
-    PATH="$HOMEBREW_PREFIX/lib/ruby/gems/3.4.0/bin:$PATH"
+if ! [[ "$PATH" =~ $HOMEBREW_PREFIX/lib/ruby/gems/3.4.0/bin: ]]; then
+	PATH="$HOMEBREW_PREFIX/lib/ruby/gems/3.4.0/bin:$PATH"
 fi
 export PATH

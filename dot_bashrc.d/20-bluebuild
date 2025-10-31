@@ -1,2 +1,4 @@
-alias bazzite-iso-ghcr="bluebuild generate-iso --iso-name bazzite-custom-$(date -I)-ghcr.iso image ghcr.io/omegasquad82/bazzite-stable-customized"
-alias bazzite-iso-yaml="bluebuild generate-iso --iso-name bazzite-custom-$(date -I)-yaml.iso recipe ~/Dokumente/GitHub/bazzite-custom/recipes/recipe-bazzite-stable.yml"
+#!/usr/bin/env bash
+
+alias bazzite-iso-ghcr='bluebuild generate-iso --iso-name bazzite-custom-$(date -I)-ghcr.iso image ghcr.io/omegasquad82/bazzite-stable-customized'
+alias bazzite-iso-yaml='bluebuild generate-iso --iso-name bazzite-custom-$(date -I)-yaml.iso recipe ~/Dokumente/GitHub/bazzite-custom/recipes/recipe-bazzite-stable.yml'
