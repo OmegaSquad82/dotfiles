@@ -2,7 +2,9 @@
 # use codium cask instead of flatpak
 if command -v brew >/dev/null; then
 	brew tap ublue-os/tap
-	brew install --cask vscodium-linux
+	if ! command -v codium; then
+		brew install --cask vscodium-linux
+	fi
 fi
 
 # linuxbrew installed package binary directories
