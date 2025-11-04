@@ -2,6 +2,7 @@
 
 # use codium cask instead of flatpak
 if command -v brew >/dev/null; then
+	export HOMEBREW_NO_AUTO_UPDATE=1
 	brew tap ublue-os/tap
 	if ! command -v codium >/dev/null; then
 		brew install --cask vscodium-linux
