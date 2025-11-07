@@ -1,0 +1,6 @@
+alias flatpak-shift='for app in $(flatpak list --app --user --columns=application);
+do
+	echo "Now managing: $app";
+	flatpak install -y -v --system "$app" | tee -a flatpak-shift-$(date -I).log && \
+	flatpak remove  -y -v --user "$app" | tee -a flatpak-shift-$(date -I).log;
+done'
