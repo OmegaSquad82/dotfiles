@@ -1,0 +1,1 @@
+alias zramwatch="watch 'free -h; echo; zramctl --output=name,disksize,data,compr,algorithm,zero-pages,total,mem-used,migrated,comp-ratio'"
