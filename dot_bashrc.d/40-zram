@@ -1,1 +1,1 @@
-alias zramwatch="watch 'cat /etc/systemd/zram-generator.conf;echo;free -h; echo; zramctl --output=name,disksize,data,compr,algorithm,zero-pages,total,mem-used,migrated,comp-ratio'"
+alias zramwatch="watch 'cat /etc/sysctl.d/20-zram-swap.conf /etc/systemd/zram-generator.conf;echo;free -h; echo; zramctl --output=name,disksize,data,compr,algorithm,zero-pages,total,mem-used,migrated,comp-ratio'"
